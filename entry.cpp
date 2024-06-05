@@ -15,3 +15,6 @@ void  Entry::print(){
 std::string Entry::getWord() const {
     return word;
 }
+int Entry::getCount()const {
+    return counter;
+}

@@ -15,6 +15,8 @@ public:
     ~Dictionary();
     void insert(const std::string& input);
     void print();
+    void search(const std::string& input)const;
+    void remove(const std::string& input);
 };
 
 #endif // DICTIONARY_H

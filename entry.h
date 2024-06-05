@@ -2,7 +2,6 @@
 
 #ifndef ENTRY_H
 #define ENTRY_H
-
 #include <cstdio>
 #include <string>
 
@@ -19,6 +18,7 @@ public:
     void increment();
     void print();
     std::string getWord()const;
+    int getCount()const ;
 };
 
 #endif // ENTRY_H
