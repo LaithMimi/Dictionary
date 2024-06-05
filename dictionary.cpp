@@ -1,8 +1,6 @@
 //213923931
 
 #include "dictionary.h"
-
-
 Dictionary::Dictionary()= default;
 Dictionary::~Dictionary()= default;
 void Dictionary::insert(const std::string& input){
