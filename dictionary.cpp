@@ -10,7 +10,7 @@ void Dictionary::insert(const std::string& input){
         if (item.getWord() == input) {
             item.increment();
             return;
-        }
+        }else if(item.getWord()=="exit")return;
     }
     values.emplace_back(input);//push_front(Entry(input))
 }
