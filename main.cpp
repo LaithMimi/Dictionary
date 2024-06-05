@@ -2,6 +2,7 @@
 #include <limits>
 #include "dictionary.h"
 void showMenu() {
+    std::cout <<"\nThe Menu.. \n" ;
     std::cout << "1. Insert word\n";
     std::cout << "2. Search word\n";
     std::cout << "3. Remove word\n";
@@ -16,6 +17,7 @@ int main() {
 
     do {
         showMenu();
+        std::cout <<"Your Choice: " ;
         std::cin >> choice;
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clears the newline character from the buffer
 
@@ -25,7 +27,6 @@ int main() {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignore remaining input on the line
             continue;
         }
-
         switch (choice) {
             case 1:
                 std::cout << "Enter word to insert: \n";
